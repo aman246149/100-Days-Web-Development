@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.for-grid-layout{
+    display: grid;
+    height: 100vh;
+    /* grid-template-columns: repeat(12,1fr); */
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "n n n n n n n n n n n n"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f"
+    ;
+}
+
+
+header{
+    grid-area: n;
+}
+
+main{
+
+grid-area: c;
+ }
+
+
+footer{
+grid-area: f;
+background-color: burlywood;
+}
+
+.navbar-items{
+    list-style: none;
+   display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 80px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+.navbar-items li{
+    font-size: large;
+    font-weight:800;
+}
+
+#collab{
+    color: rgb(187, 47, 47);
+    font-size: x-large;
+}
+
+#get-started{
+    font-size: x-large;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(185, 40, 40) , rgb(114, 114, 20));
+    padding: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.b-name{
+    grid-column: 2/3;
+}
+
+.home{
+    display: flex;
+    grid-column: 3/10;
+    justify-content: space-evenly;
+}
+
+.get-button{
+   grid-column: 10/12;
+}
+
+
+.main-content{
+display: grid;
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: 100px auto auto;
+}
+
+.left-part{
+grid-column: 2/6;
+grid-row: 2;
+}
+
+.quote{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.para{
+    font-size: medium;
+    padding-top: 20px;
+}
+
+.icon img{
+    height: 20px;
+    padding-left: 5px;
+}
+.action-btn{
+    margin-top: 25px;
+    width: 54%;
+    display: flex;
+    border-radius: 20px;
+    border: 0.1px solid grey;
+    background-color: white;
+    padding: 4px;
+    
+}
+
+.btn-name{
+    font-weight: 700;
+    padding-left: 10px;    
+}
+
+.right-part{
+    grid-column: 6/12;
+    grid-row: 2/1;
+}
+
+
+.image-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.leftpartfooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    align-items: center;
+}
+
+.leftpartfooter img{
+    height: 20px;
+}
+
+.name{
+    font-size: large;
+}
