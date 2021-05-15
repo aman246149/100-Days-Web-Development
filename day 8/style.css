@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.image img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.timer{
+    display: flex;
+    font-size: 40px;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.times{
+    display: flex;
+    font-size: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.day{
+    padding: 20px;
+}
+
+.hour{
+    padding: 20px;
+}
+
+.minute{
+    padding: 20px;
+}
+
+.sec{
+    padding: 20px;
+}
